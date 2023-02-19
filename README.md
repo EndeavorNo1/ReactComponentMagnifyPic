@@ -1,0 +1,2 @@
+# ReactComponentMagnifyPic
+Created with CodeSandbox
