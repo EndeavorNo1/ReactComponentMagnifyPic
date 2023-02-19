@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#page {
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  overflow: hidden;
+}
+#page:after {
+  content: "";
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+#page,
+#magnify {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-attachment: fixed !important;
+  background-size: 900px !important;
+  transition: background-size 300ms, width 300ms, height 300ms;
+}
+
+#magnify {
+  z-index: 9;
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 200px;
+  box-shadow: inset 0px 0px 30px 20px rgba(0, 0, 0, 0.1),
+    0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+  margin: -150px;
+  border: 10px solid #fff;
+  background-size: 1200px !important;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+}
+
+#magnify:active {
+  background-size: 1800px !important;
+}
